@@ -1,6 +1,3 @@
-"""
-ChromaDB wrapper - handles the local persistent vector store.
-"""
 
 import os
 import chromadb

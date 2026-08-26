@@ -1,8 +1,3 @@
-"""
-src/retrieval.py
-Handles querying the ChromaDB vector store.
-Filters or flags superseded policies to ensure the agent uses the correct information.
-"""
 
 from src.ingestion.embedder import embed_query
 from src.ingestion.vectorstore import query

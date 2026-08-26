@@ -1,9 +1,3 @@
-"""
-src/agent.py
-The core LLM agent powered by the new google-genai SDK. 
-Handles system prompts, RAG context injection, multi-turn memory, 
-and automatic tool calling for order lookups.
-"""
 
 import os
 import json

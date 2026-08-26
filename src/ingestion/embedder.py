@@ -1,6 +1,3 @@
-"""
-Thin wrapper around Gemini's embedding API using the new google-genai SDK.
-"""
 import os
 from google import genai
 from google.genai import types

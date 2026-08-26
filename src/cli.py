@@ -1,7 +1,4 @@
-"""
-src/cli.py
-The terminal interface to interact with the Aster Row AI Agent.
-"""
+
 import os
 import warnings
 import logging

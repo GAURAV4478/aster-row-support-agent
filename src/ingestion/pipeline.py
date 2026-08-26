@@ -1,20 +1,3 @@
-"""
-Ingestion pipeline: loads knowledge-base markdown files, chunks them,
-embeds each chunk, and stores everything in ChromaDB - WITH their
-frontmatter metadata (status, policy_authority, supersedes) attached.
-
-This metadata preservation is the single most important thing this file
-does for solving Challenge 1 and Challenge 4. Without it, a chunk from
-the superseded 45-day policy and a chunk from the current 30-day policy
-look nearly identical to a similarity search - there'd be no way to tell
-them apart at query time. Same for the poisoned draft doc (14-internal-
-content-migration-notes.md, policy_authority: none) - if we don't carry
-that tag through, retrieval.py has nothing to filter on later.
-
-Run once (and again any time knowledge-base/ changes):
-    python -m src.ingestion.pipeline
-"""
-
 import os
 import glob
 import frontmatter
